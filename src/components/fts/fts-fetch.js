@@ -11,7 +11,7 @@ const makeRequest = (searchTerm, pageNumber, resolve, reject) => {
                             .withSearchTerm(searchTerm)
                             .withPageNumber(pageNumber)
                             .build();
-                            
+
     return fetchJson.get(requestUrl)
         .then((response) => resolve(response))
         .catch(error => {
