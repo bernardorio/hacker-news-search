@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements:
+
+**You’ll need to have Node 8.10.0 or later on your local development machine**
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,7 +33,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Considerations
 
 - I tried to separate some of the concerns, such as displaying the results, pagination, and making the request to the API itself.
-- Also, I've added debounce to the API requests, so that it "buffers" key types before making an actual request. This way you don't make a request on every keystroke, and also prevents the screen from flashing, providing a better user experience
+- Also, I've added debounce to the API requests, so that it "buffers" keystrokes before making an actual request. This way you don't make a request on every keystroke, and also prevents the screen from flashing, providing a better user experience
 - I've added very little comments in the code, since I believe that the tests should suffice as documentation
 
 ### TODO

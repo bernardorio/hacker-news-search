@@ -5,11 +5,13 @@ let inFlightRequest = new Promise(() => {});
 let timeout;
 
 const makeRequest = (searchTerm, pageNumber, resolve, reject) => {
+
     let requestUrl = new HackerNewsUrlBuilder()
                             .withTag('story')
                             .withSearchTerm(searchTerm)
                             .withPageNumber(pageNumber)
                             .build();
+                            
     return fetchJson.get(requestUrl)
         .then((response) => resolve(response))
         .catch(error => {
